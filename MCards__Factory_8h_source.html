@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Multiverse Cards: Código-Fonte de source/h/MCards/Core/Register/MCards_Factory.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Multiverse Cards
+   </div>
+   <div id="projectbrief">Um jogo caótico de cartas e universos, em código aberto.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_1aa2bb1de3685add07c99d752733b4ac.html">h</a></li><li class="navelem"><a class="el" href="dir_f8e6568a5237170191b3199b1a548c1f.html">MCards</a></li><li class="navelem"><a class="el" href="dir_868ed1bcd088aa3d0251f77700dc14b4.html">Core</a></li><li class="navelem"><a class="el" href="dir_83fa5501c3c73d1515f4d3cdf26e344f.html">Register</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MCards_Factory.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="MCards__Factory_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DEF_MCards_Factory_Header</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DEF_MCards_Factory_Header</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="MCards__Rarity_8h.html">MCards/Core/Rarity/MCards_Rarity.h</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structMCards__CardSpawn.html">   12</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structMCards__CardSpawn.html#a7a29c1ded5fec0372d12ed762c5f519e">   14</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__CardSpawn.html#a7a29c1ded5fec0372d12ed762c5f519e">iD</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structMCards__CardSpawn.html#a9a8e32221bae4caefb3c5b9b6abdb59a">   15</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__CardSpawn.html#a9a8e32221bae4caefb3c5b9b6abdb59a">count</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_struct" href="structMCards__CardSpawn.html">MCards_CardSpawn</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#a008abc642482ea84bcd1f8ca5603ebaf">   27</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__CardBase.html#a008abc642482ea84bcd1f8ca5603ebaf">displayName</a>;          </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#ad8d30e548ea8954c48b47a0089f56f4c">   28</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__CardBase.html#ad8d30e548ea8954c48b47a0089f56f4c">displayDescription</a>;   </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#a1fd20de2f2f8a4874122bec07d35cbcb">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__CardBase.html#a1fd20de2f2f8a4874122bec07d35cbcb">deployCost</a>;              </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#ad8844587183cdbbeaef2f2a6fe164a5a">   32</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="structMCards__CardBase.html#ad8844587183cdbbeaef2f2a6fe164a5a">spawnCount</a>;           </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#a781a6ceb19b5758a1981c7e8ec499966">   34</a></span>    <a class="code hl_enumeration" href="MCards__Rarity_8h.html#aeeac316646fc7cd7528b4f634a3c27fb">MCards_Rarity</a> <a class="code hl_variable" href="structMCards__CardBase.html#a781a6ceb19b5758a1981c7e8ec499966">rarity</a>;        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structMCards__CardBase.html#ac7a0c4a0471138cb1f1b82f50d6caf81">   35</a></span>    <a class="code hl_struct" href="structMCards__CardSpawn.html">MCards_CardSpawn</a> * spawns[]; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_struct" href="structMCards__CardBase.html">MCards_CardBase</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html#a7279806e2eac96a4e380c2d0fc1c677e">   41</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__UnitBase.html#a7279806e2eac96a4e380c2d0fc1c677e">hitpoints</a>;               </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html#a6a0dbdf4da47a7f66582f6b8ac280ae1">   42</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__UnitBase.html#a6a0dbdf4da47a7f66582f6b8ac280ae1">directDamage</a>;            </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html#ab892df2c468f8389d789bcbe39f18fb4">   44</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__UnitBase.html#ab892df2c468f8389d789bcbe39f18fb4">attackDelay</a>;           </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html#ac3315ed2f4f58aa628bea9f50bee90b6">   45</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__UnitBase.html#ac3315ed2f4f58aa628bea9f50bee90b6">movementSpeed</a>;         </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structMCards__UnitBase.html#a87cd0d6da7601460c5c9cec987bcad36">   46</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__UnitBase.html#a87cd0d6da7601460c5c9cec987bcad36">attackRange</a>;           </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><a class="code hl_struct" href="structMCards__UnitBase.html">MCards_UnitBase</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structMCards__LeaderCardBase.html">   56</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structMCards__LeaderCardBase.html#abcadbe785f5706828b544bacc5f8dc21">   58</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__LeaderCardBase.html#abcadbe785f5706828b544bacc5f8dc21">displayName</a>;          </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structMCards__LeaderCardBase.html#aa733d9743d492d8ed552ea94e86af05d">   59</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__LeaderCardBase.html#aa733d9743d492d8ed552ea94e86af05d">displayDescription</a>;   </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structMCards__LeaderCardBase.html#a63bb2dbd0f7c3f7f077acdfa9851153c">   60</a></span>    <span class="keywordtype">char</span> * <a class="code hl_variable" href="structMCards__LeaderCardBase.html#a63bb2dbd0f7c3f7f077acdfa9851153c">referenceID</a>;          </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structMCards__LeaderCardBase.html#ab1889edcfca58a9a1b7c272bf20da550">   62</a></span>    <a class="code hl_enumeration" href="MCards__Rarity_8h.html#aeeac316646fc7cd7528b4f634a3c27fb">MCards_Rarity</a> <a class="code hl_variable" href="structMCards__LeaderCardBase.html#ab1889edcfca58a9a1b7c272bf20da550">rarity</a>;        </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_struct" href="structMCards__LeaderCardBase.html">MCards_LeaderCardBase</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structMCards__LeaderBase.html">   66</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structMCards__LeaderBase.html#af495fba529444933b340f1ae33619581">   68</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__LeaderBase.html#af495fba529444933b340f1ae33619581">hitpoints</a>;               </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structMCards__LeaderBase.html#ac8dc9394f39bbc19cf12f9b8470a46bb">   69</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMCards__LeaderBase.html#ac8dc9394f39bbc19cf12f9b8470a46bb">directDamage</a>;            </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structMCards__LeaderBase.html#af98d8d06162a5663703d9c77800eb5bc">   71</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__LeaderBase.html#af98d8d06162a5663703d9c77800eb5bc">attackDelay</a>;           </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structMCards__LeaderBase.html#aba16e0a68447e56f4852b13dcd51c43a">   72</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__LeaderBase.html#aba16e0a68447e56f4852b13dcd51c43a">attackRange</a>;           </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="code hl_struct" href="structMCards__LeaderBase.html">MCards_LeaderBase</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aMCards__Rarity_8h_html"><div class="ttname"><a href="MCards__Rarity_8h.html">MCards_Rarity.h</a></div></div>
+<div class="ttc" id="aMCards__Rarity_8h_html_aeeac316646fc7cd7528b4f634a3c27fb"><div class="ttname"><a href="MCards__Rarity_8h.html#aeeac316646fc7cd7528b4f634a3c27fb">MCards_Rarity</a></div><div class="ttdeci">MCards_Rarity</div><div class="ttdef"><b>Definição</b> <a href="MCards__Rarity_8h_source.html#l00004">MCards_Rarity.h:5</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html"><div class="ttname"><a href="structMCards__CardBase.html">MCards_CardBase</a></div><div class="ttdoc">Dados de alocação da carta na memória.</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00025">MCards_Factory.h:26</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html_a008abc642482ea84bcd1f8ca5603ebaf"><div class="ttname"><a href="structMCards__CardBase.html#a008abc642482ea84bcd1f8ca5603ebaf">MCards_CardBase::displayName</a></div><div class="ttdeci">char * displayName</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00027">MCards_Factory.h:27</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html_a1fd20de2f2f8a4874122bec07d35cbcb"><div class="ttname"><a href="structMCards__CardBase.html#a1fd20de2f2f8a4874122bec07d35cbcb">MCards_CardBase::deployCost</a></div><div class="ttdeci">int deployCost</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00030">MCards_Factory.h:30</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html_a781a6ceb19b5758a1981c7e8ec499966"><div class="ttname"><a href="structMCards__CardBase.html#a781a6ceb19b5758a1981c7e8ec499966">MCards_CardBase::rarity</a></div><div class="ttdeci">MCards_Rarity rarity</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00034">MCards_Factory.h:34</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html_ad8844587183cdbbeaef2f2a6fe164a5a"><div class="ttname"><a href="structMCards__CardBase.html#ad8844587183cdbbeaef2f2a6fe164a5a">MCards_CardBase::spawnCount</a></div><div class="ttdeci">size_t spawnCount</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00032">MCards_Factory.h:32</a></div></div>
+<div class="ttc" id="astructMCards__CardBase_html_ad8d30e548ea8954c48b47a0089f56f4c"><div class="ttname"><a href="structMCards__CardBase.html#ad8d30e548ea8954c48b47a0089f56f4c">MCards_CardBase::displayDescription</a></div><div class="ttdeci">char * displayDescription</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00028">MCards_Factory.h:28</a></div></div>
+<div class="ttc" id="astructMCards__CardSpawn_html"><div class="ttname"><a href="structMCards__CardSpawn.html">MCards_CardSpawn</a></div><div class="ttdoc">Dados de conjuração da carta.</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00012">MCards_Factory.h:13</a></div></div>
+<div class="ttc" id="astructMCards__CardSpawn_html_a7a29c1ded5fec0372d12ed762c5f519e"><div class="ttname"><a href="structMCards__CardSpawn.html#a7a29c1ded5fec0372d12ed762c5f519e">MCards_CardSpawn::iD</a></div><div class="ttdeci">char * iD</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00014">MCards_Factory.h:14</a></div></div>
+<div class="ttc" id="astructMCards__CardSpawn_html_a9a8e32221bae4caefb3c5b9b6abdb59a"><div class="ttname"><a href="structMCards__CardSpawn.html#a9a8e32221bae4caefb3c5b9b6abdb59a">MCards_CardSpawn::count</a></div><div class="ttdeci">unsigned int count</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00015">MCards_Factory.h:15</a></div></div>
+<div class="ttc" id="astructMCards__LeaderBase_html"><div class="ttname"><a href="structMCards__LeaderBase.html">MCards_LeaderBase</a></div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00066">MCards_Factory.h:67</a></div></div>
+<div class="ttc" id="astructMCards__LeaderBase_html_aba16e0a68447e56f4852b13dcd51c43a"><div class="ttname"><a href="structMCards__LeaderBase.html#aba16e0a68447e56f4852b13dcd51c43a">MCards_LeaderBase::attackRange</a></div><div class="ttdeci">float attackRange</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00072">MCards_Factory.h:72</a></div></div>
+<div class="ttc" id="astructMCards__LeaderBase_html_ac8dc9394f39bbc19cf12f9b8470a46bb"><div class="ttname"><a href="structMCards__LeaderBase.html#ac8dc9394f39bbc19cf12f9b8470a46bb">MCards_LeaderBase::directDamage</a></div><div class="ttdeci">int directDamage</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00069">MCards_Factory.h:69</a></div></div>
+<div class="ttc" id="astructMCards__LeaderBase_html_af495fba529444933b340f1ae33619581"><div class="ttname"><a href="structMCards__LeaderBase.html#af495fba529444933b340f1ae33619581">MCards_LeaderBase::hitpoints</a></div><div class="ttdeci">int hitpoints</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00068">MCards_Factory.h:68</a></div></div>
+<div class="ttc" id="astructMCards__LeaderBase_html_af98d8d06162a5663703d9c77800eb5bc"><div class="ttname"><a href="structMCards__LeaderBase.html#af98d8d06162a5663703d9c77800eb5bc">MCards_LeaderBase::attackDelay</a></div><div class="ttdeci">float attackDelay</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00071">MCards_Factory.h:71</a></div></div>
+<div class="ttc" id="astructMCards__LeaderCardBase_html"><div class="ttname"><a href="structMCards__LeaderCardBase.html">MCards_LeaderCardBase</a></div><div class="ttdoc">Dados de alocação da carta na memória.</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00056">MCards_Factory.h:57</a></div></div>
+<div class="ttc" id="astructMCards__LeaderCardBase_html_a63bb2dbd0f7c3f7f077acdfa9851153c"><div class="ttname"><a href="structMCards__LeaderCardBase.html#a63bb2dbd0f7c3f7f077acdfa9851153c">MCards_LeaderCardBase::referenceID</a></div><div class="ttdeci">char * referenceID</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00060">MCards_Factory.h:60</a></div></div>
+<div class="ttc" id="astructMCards__LeaderCardBase_html_aa733d9743d492d8ed552ea94e86af05d"><div class="ttname"><a href="structMCards__LeaderCardBase.html#aa733d9743d492d8ed552ea94e86af05d">MCards_LeaderCardBase::displayDescription</a></div><div class="ttdeci">char * displayDescription</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00059">MCards_Factory.h:59</a></div></div>
+<div class="ttc" id="astructMCards__LeaderCardBase_html_ab1889edcfca58a9a1b7c272bf20da550"><div class="ttname"><a href="structMCards__LeaderCardBase.html#ab1889edcfca58a9a1b7c272bf20da550">MCards_LeaderCardBase::rarity</a></div><div class="ttdeci">MCards_Rarity rarity</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00062">MCards_Factory.h:62</a></div></div>
+<div class="ttc" id="astructMCards__LeaderCardBase_html_abcadbe785f5706828b544bacc5f8dc21"><div class="ttname"><a href="structMCards__LeaderCardBase.html#abcadbe785f5706828b544bacc5f8dc21">MCards_LeaderCardBase::displayName</a></div><div class="ttdeci">char * displayName</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00058">MCards_Factory.h:58</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html"><div class="ttname"><a href="structMCards__UnitBase.html">MCards_UnitBase</a></div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00039">MCards_Factory.h:40</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html_a6a0dbdf4da47a7f66582f6b8ac280ae1"><div class="ttname"><a href="structMCards__UnitBase.html#a6a0dbdf4da47a7f66582f6b8ac280ae1">MCards_UnitBase::directDamage</a></div><div class="ttdeci">int directDamage</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00042">MCards_Factory.h:42</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html_a7279806e2eac96a4e380c2d0fc1c677e"><div class="ttname"><a href="structMCards__UnitBase.html#a7279806e2eac96a4e380c2d0fc1c677e">MCards_UnitBase::hitpoints</a></div><div class="ttdeci">int hitpoints</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00041">MCards_Factory.h:41</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html_a87cd0d6da7601460c5c9cec987bcad36"><div class="ttname"><a href="structMCards__UnitBase.html#a87cd0d6da7601460c5c9cec987bcad36">MCards_UnitBase::attackRange</a></div><div class="ttdeci">float attackRange</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00046">MCards_Factory.h:46</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html_ab892df2c468f8389d789bcbe39f18fb4"><div class="ttname"><a href="structMCards__UnitBase.html#ab892df2c468f8389d789bcbe39f18fb4">MCards_UnitBase::attackDelay</a></div><div class="ttdeci">float attackDelay</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00044">MCards_Factory.h:44</a></div></div>
+<div class="ttc" id="astructMCards__UnitBase_html_ac3315ed2f4f58aa628bea9f50bee90b6"><div class="ttname"><a href="structMCards__UnitBase.html#ac3315ed2f4f58aa628bea9f50bee90b6">MCards_UnitBase::movementSpeed</a></div><div class="ttdeci">float movementSpeed</div><div class="ttdef"><b>Definição</b> <a href="MCards__Factory_8h_source.html#l00045">MCards_Factory.h:45</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

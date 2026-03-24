@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Multiverse Cards: Código-Fonte de source/h/MCards/Core/Math/MCards_Mathematics.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Multiverse Cards
+   </div>
+   <div id="projectbrief">Um jogo caótico de cartas e universos, em código aberto.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_1aa2bb1de3685add07c99d752733b4ac.html">h</a></li><li class="navelem"><a class="el" href="dir_f8e6568a5237170191b3199b1a548c1f.html">MCards</a></li><li class="navelem"><a class="el" href="dir_868ed1bcd088aa3d0251f77700dc14b4.html">Core</a></li><li class="navelem"><a class="el" href="dir_6969399d70b3dd734a4230e46ec7836a.html">Math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MCards_Mathematics.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="MCards__Mathematics_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DEF_MCards_Mathematics_Header</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DEF_MCards_Mathematics_Header</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structMCards__Vector2D.html">    8</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structMCards__Vector2D.html#ab1019eebe479f90363dcb5350dfc8ee0">   10</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__Vector2D.html#ab1019eebe479f90363dcb5350dfc8ee0">coordinateX</a>; </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structMCards__Vector2D.html#ab454faaaadf9eca5c801d2019e0c8fa3">   11</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMCards__Vector2D.html#ab454faaaadf9eca5c801d2019e0c8fa3">coordinateY</a>; </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="MCards__Mathematics_8h.html#a1b7eb2724be7799a2229d0b33a370bce">   24</a></span><a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a> * <a class="code hl_function" href="MCards__Mathematics_8h.html#a1b7eb2724be7799a2229d0b33a370bce">MCards_CreateVector2D</a>(<span class="keywordtype">float</span> cx, <span class="keywordtype">float</span> cy);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="MCards__Mathematics_8h.html#ab270c33012814a98f4cb4a0555ab1435">   34</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="MCards__Mathematics_8h.html#ab270c33012814a98f4cb4a0555ab1435">MCards_GetVectorXCoordinate</a>(<a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a> * vector2D);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="MCards__Mathematics_8h.html#a45f093b7e3e7b419ba2c626cfaacba3e">   44</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="MCards__Mathematics_8h.html#a45f093b7e3e7b419ba2c626cfaacba3e">MCards_GetVectorYCoordinate</a>(<a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a> * vector2D);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="MCards__Mathematics_8h.html#a15f048b5745a056ac88c6bbd9a01428f">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="MCards__Mathematics_8h.html#a15f048b5745a056ac88c6bbd9a01428f">MCards_SmoothBlendVector2D</a>(<a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a> * firstVector2D, <a class="code hl_struct" href="structMCards__Vector2D.html">MCards_Vector2D</a> * secondVector2D, <span class="keywordtype">float</span> blendFactor);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aMCards__Mathematics_8h_html_a15f048b5745a056ac88c6bbd9a01428f"><div class="ttname"><a href="MCards__Mathematics_8h.html#a15f048b5745a056ac88c6bbd9a01428f">MCards_SmoothBlendVector2D</a></div><div class="ttdeci">void MCards_SmoothBlendVector2D(MCards_Vector2D *firstVector2D, MCards_Vector2D *secondVector2D, float blendFactor)</div><div class="ttdoc">Mistura entre dois vetores bidimensional.</div></div>
+<div class="ttc" id="aMCards__Mathematics_8h_html_a1b7eb2724be7799a2229d0b33a370bce"><div class="ttname"><a href="MCards__Mathematics_8h.html#a1b7eb2724be7799a2229d0b33a370bce">MCards_CreateVector2D</a></div><div class="ttdeci">MCards_Vector2D * MCards_CreateVector2D(float cx, float cy)</div><div class="ttdoc">Criação e alocalçao uma instância de vetor bidimensional na memória.</div></div>
+<div class="ttc" id="aMCards__Mathematics_8h_html_a45f093b7e3e7b419ba2c626cfaacba3e"><div class="ttname"><a href="MCards__Mathematics_8h.html#a45f093b7e3e7b419ba2c626cfaacba3e">MCards_GetVectorYCoordinate</a></div><div class="ttdeci">float MCards_GetVectorYCoordinate(MCards_Vector2D *vector2D)</div><div class="ttdoc">Obtenção e retorno do valor de coordenada vertical do vetor.</div></div>
+<div class="ttc" id="aMCards__Mathematics_8h_html_ab270c33012814a98f4cb4a0555ab1435"><div class="ttname"><a href="MCards__Mathematics_8h.html#ab270c33012814a98f4cb4a0555ab1435">MCards_GetVectorXCoordinate</a></div><div class="ttdeci">float MCards_GetVectorXCoordinate(MCards_Vector2D *vector2D)</div><div class="ttdoc">Obtenção e retorno do valor de coordenada horizontal do vetor.</div></div>
+<div class="ttc" id="astructMCards__Vector2D_html"><div class="ttname"><a href="structMCards__Vector2D.html">MCards_Vector2D</a></div><div class="ttdoc">Vetor bidimensional.</div><div class="ttdef"><b>Definição</b> <a href="MCards__Mathematics_8h_source.html#l00008">MCards_Mathematics.h:9</a></div></div>
+<div class="ttc" id="astructMCards__Vector2D_html_ab1019eebe479f90363dcb5350dfc8ee0"><div class="ttname"><a href="structMCards__Vector2D.html#ab1019eebe479f90363dcb5350dfc8ee0">MCards_Vector2D::coordinateX</a></div><div class="ttdeci">float coordinateX</div><div class="ttdef"><b>Definição</b> <a href="MCards__Mathematics_8h_source.html#l00010">MCards_Mathematics.h:10</a></div></div>
+<div class="ttc" id="astructMCards__Vector2D_html_ab454faaaadf9eca5c801d2019e0c8fa3"><div class="ttname"><a href="structMCards__Vector2D.html#ab454faaaadf9eca5c801d2019e0c8fa3">MCards_Vector2D::coordinateY</a></div><div class="ttdeci">float coordinateY</div><div class="ttdef"><b>Definição</b> <a href="MCards__Mathematics_8h_source.html#l00011">MCards_Mathematics.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
